@@ -1,16 +1,42 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title -Tiki test web</title>
+    @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @Scripts.Render("~/bundles/bootstrap")
+    <style>
+        /* Header/Logo Title */
+        .header {
+            top:0;
+            padding: 10px;
+            text-align: center;
+            background: #017FFF;
+            color: white;
+            height: 102px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     @Html.Partial("_NavBar")
+   
     <div class="container body-content">
+        <div class="breadcrumb">
+            @Html.ActionLink("Home", "Index", "Home")
+            @if (ViewContext.RouteData.Values["controller"].ToString() != "Home")
+            {
+                @:> @Html.ActionLink(ViewContext.RouteData.Values["controller"].ToString(), "Index", ViewContext.RouteData.Values["controller"].ToString())
+            }
+            @if (ViewContext.RouteData.Values["action"].ToString() != "Index")
+            {
+                @:> @Html.ActionLink(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString())
+            }
+        </div>
         @RenderBody()
         <hr />
         <footer>
@@ -18,7 +44,6 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/lib")
     @RenderSection("scripts", required: false)
 </body>
 </html>

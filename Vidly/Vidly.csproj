@@ -46,6 +46,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcSiteMapProvider, Version=4.6.26.0, Culture=neutral, PublicKeyToken=1923abe4657913cc, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcSiteMapProvider.MVC5.Core.4.6.26\lib\net45\MvcSiteMapProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider.WebActivator, Version=4.6.26.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcSiteMapProvider.MVC5.4.6.26\lib\net45\MvcSiteMapProvider.WebActivator.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -102,6 +108,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.1\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -136,12 +145,36 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Image\147bd239527c5fd9cee7d4a387409d85.png" />
+    <Content Include="Content\Image\21a249b92a62268e4d51bf75470370bf.png" />
+    <Content Include="Content\Image\229de24be8b9b6592f663e67c79aa63b.png" />
+    <Content Include="Content\Image\3ec8f9b408012778c2a6c27c5cee5098.jpg" />
+    <Content Include="Content\Image\54LFHqg.jpg" />
+    <Content Include="Content\Image\68076b684253fb354fc2019795b05afd.png" />
+    <Content Include="Content\Image\7pS6UeQ.jpg" />
+    <Content Include="Content\Image\92ae42a6ad89b3c73538bfb156219e3e.png" />
+    <Content Include="Content\Image\b0f603781ce07660925e57a54754c04e.png" />
+    <Content Include="Content\Image\bf6c078ee85d3946bbd775c341376b52.png" />
+    <Content Include="Content\Image\c623f218c7671465cb1c7cd23d540ac9.png" />
+    <Content Include="Content\Image\cd9aa1dcdfa1e47b853b9b01d9802c59.jpg" />
+    <Content Include="Content\Image\cfaa429de628a690ef7599185e00a51c.jpg" />
+    <Content Include="Content\Image\d067dc065bb516460688ddb73135f2a2.png" />
+    <Content Include="Content\Image\d08d41e02ee232440a5086940064c747.png" />
+    <Content Include="Content\Image\da3d2083b2f6815e44efcf1b4759caf1.jpg" />
+    <Content Include="Content\Image\Gnx04xF.jpg" />
+    <Content Include="Content\Image\Logo.png" />
+    <Content Include="Content\Image\Tikiicon.png" />
+    <Content Include="Content\Image\UU9hA4R.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Mvc.sitemap" />
+    <None Include="MvcSiteMapSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -169,10 +202,19 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Movie\Random.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\Home\carousel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Image\" />
+    <Folder Include="Views\Breadcrumb\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

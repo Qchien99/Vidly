@@ -8,6 +8,10 @@ namespace Vidly.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Tiki()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();
@@ -24,6 +28,11 @@ namespace Vidly.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Carousel()
+        {
             return View();
         }
     }

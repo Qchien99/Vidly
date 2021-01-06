@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-top: 0;
+    padding-bottom: 0;*/
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +21,99 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#partners {
+    height: 105px;
+    background-color: #eee;
+    white-space: nowrap;
+    width: 100%;
+    display: table;
+}
+
+.logo-image {
+    vertical-align: middle;
+    padding: 0px;
+    display: table-cell;
+}
+
+    .logo-image img {
+        width: 100%;
+    }
+
+#partners2 {
+    height: 105px;
+    background-color: #eee;
+    white-space: nowrap;
+    width: 100%;
+    display: table;
+}
+
+.logo-image {
+    vertical-align: middle;
+    padding: 0px;
+    display: table-cell;
+}
+
+    .logo-image img {
+        width: 100%;
+    }
+
+.top-buffer {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
