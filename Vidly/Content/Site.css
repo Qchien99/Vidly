@@ -1,14 +1,30 @@
 ﻿body {
     /*padding-top: 0;
     padding-bottom: 0;*/
+    background-color: #f2f2f2;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 156px;
+    margin-right: 156px;
+    background-color: white;
+}
+.wrapperbc {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 156px;
+    margin-right: 156px;
 }
 
+.midwrapper {
+    margin:0;
+    align-content: center;
+    padding-top:18px;
+    padding-bottom:8px;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -24,24 +40,6 @@ textarea {
 }
 
 #partners {
-    height: 105px;
-    background-color: #eee;
-    white-space: nowrap;
-    width: 100%;
-    display: table;
-}
-
-.logo-image {
-    vertical-align: middle;
-    padding: 0px;
-    display: table-cell;
-}
-
-    .logo-image img {
-        width: 100%;
-    }
-
-#partners2 {
     height: 105px;
     background-color: #eee;
     white-space: nowrap;
@@ -81,7 +79,7 @@ li {
         display: inline-block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: 0px;
         text-decoration: none;
     }
 
@@ -127,3 +125,19 @@ li {
         left: 100%;
         margin-top: -1px;
     }
+
+.gold {
+    color:#FFD700 
+}
+
+.wrapper {
+    margin-right: 0; /* 1 */
+    margin-left: 0; /* 1 */
+    max-width: 960px; /* 2 */
+    padding-right: 0px; /* 3 */
+    padding-left: 0px; /* 3 */
+}
+
+input.marginnone{
+    margin: 0;
+}
