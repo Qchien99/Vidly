@@ -1810,9 +1810,11 @@
     <Content Include="Content\Image\d067dc065bb516460688ddb73135f2a2.png" />
     <Content Include="Content\Image\d08d41e02ee232440a5086940064c747.png" />
     <Content Include="Content\Image\da3d2083b2f6815e44efcf1b4759caf1.jpg" />
+    <Content Include="Content\Image\down.png" />
     <Content Include="Content\Image\Gnx04xF.jpg" />
     <Content Include="Content\Image\Human.png" />
     <Content Include="Content\Image\Logo.png" />
+    <Content Include="Content\Image\nutton.png" />
     <Content Include="Content\Image\Shoppingcart.png" />
     <Content Include="Content\Image\Tikiicon.png" />
     <Content Include="Content\Image\UU9hA4R.jpg" />
