@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container">
+<div class="">
 
     <div class="row">
         <div class="cuspad col-md-3 ">
@@ -63,24 +63,60 @@
             <br>
             <hr />
 
-            <div>
+            <div class="d-block p-4 bg-light padblock">
+                <h4 class="cusmargin title">CÔNG TY PHÁT HÀNH</h4>
                 <input type="checkbox" class="read-more-state" id="post-2" />
-                <ul class="read-more-wrap">
-                    <li class="item"><a class="item smallfont" href="#"> Sách Tiếng Việt </a></li>
-                    <li class="item"><a class="item smallfont" href="#"> Sách Tiếng Việt </a></li>
-                    <li class="item read-more-target"><a class="item smallfont" href="#"> Sách Tiếng Việt </a></li> <n>
-                    <li class="item read-more-target"><a class="item smallfont" href="#"> Sách Tiếng Việt </a></li></n>
-                </ul>
+                <div class="read-more-wrap">
+                    <a class="item smallfont" href="#"> Alphabooks </a>
+                    <br>
+                    <a class="item smallfont" href="#"> MCBOOKS </a>
+                    <br>
+                    <a class="item smallfont" href="#"> Nhà xuất bản Kim Đồng </a>
+                    <br>
+                    <a class="item smallfont" href="#"> NXB Trẻ </a>
+                    <br>
+                </div>
+                <label for="post-2" class="read-more-trigger"></label>
+            </div>
 
+            <div class="d-block p-4 bg-light padblock">
+                <h4 class="cusmargin title">TÁC GIẢ</h4>
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                <div class="read-more-wrap">
+                    <a class="item smallfont" href="#"> Alphabooks </a>
+                    <br>
+                    <a class="item smallfont" href="#"> MCBOOKS </a>
+                    <br>
+                    <a class="item smallfont" href="#"> Nhà xuất bản Kim Đồng </a>
+                    <br>
+                    <a class="item smallfont" href="#"> NXB Trẻ </a>
+                    <br>
+                </div>
+                <label for="post-2" class="read-more-trigger"></label>
+            </div>
+
+            <div class="d-block p-4 bg-light padblock">
+                <h4 class="cusmargin title">NHÀ CUNG CẤP</h4>
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                <div class="read-more-wrap">
+                    <a class="item smallfont" href="#"> Alphabooks </a>
+                    <br>
+                    <a class="item smallfont" href="#"> MCBOOKS </a>
+                    <br>
+                    <a class="item smallfont" href="#"> Nhà xuất bản Kim Đồng </a>
+                    <br>
+                    <a class="item smallfont" href="#"> NXB Trẻ </a>
+                    <br>
+                </div>
                 <label for="post-2" class="read-more-trigger"></label>
             </div>
 
         </div>
 
         <div class=" cuspad col-md-9 ">
-            <h2>
-                Nhà Sách Tiki
-            </h2>
+            @*<h2>
+                    Nhà Sách Tiki
+                </h2>*@
             <hr />
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -106,33 +142,33 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="img btn-block  ">
-                <a href="/"><img src="~/Content/Image/21a249b92a62268e4d51bf75470370bf.png" /></a>
-                <a href="/"><img src="~/Content/Image/229de24be8b9b6592f663e67c79aa63b.png" /></a>
-                <a href="/"><img src="~/Content/Image/68076b684253fb354fc2019795b05afd.png" /></a>
-            </div>
-            <div id="partners" class="img btn-block">
-                <div class="logo-image">
-                    <a href="/"><img src="~/Content/Image/147bd239527c5fd9cee7d4a387409d85.png" /></a>
+            @*<div class="img btn-block  ">
+                    <a href="/"><img src="~/Content/Image/21a249b92a62268e4d51bf75470370bf.png" /></a>
+                    <a href="/"><img src="~/Content/Image/229de24be8b9b6592f663e67c79aa63b.png" /></a>
+                    <a href="/"><img src="~/Content/Image/68076b684253fb354fc2019795b05afd.png" /></a>
+                </div>*@
+            @*<div id="partners" class="img btn-block">
+                    <div class="logo-image">
+                        <a href="/"><img src="~/Content/Image/147bd239527c5fd9cee7d4a387409d85.png" /></a>
+                    </div>
+                    <div class="logo-image">
+                        <a href="/"><img src="~/Content/Image/92ae42a6ad89b3c73538bfb156219e3e.png" /></a>
+                    </div>
+                    <div class="logo-image">
+                        <a href="/"><img src="~/Content/Image/b0f603781ce07660925e57a54754c04e.png" /></a>
+                    </div>
                 </div>
-                <div class="logo-image">
-                    <a href="/"><img src="~/Content/Image/92ae42a6ad89b3c73538bfb156219e3e.png" /></a>
-                </div>
-                <div class="logo-image">
-                    <a href="/"><img src="~/Content/Image/b0f603781ce07660925e57a54754c04e.png" /></a>
-                </div>
-            </div>
-            <div id="partners" class="img btn-block ">
-                <div class="logo-image">
-                    <a href="/"><img src="~/Content/Image/147bd239527c5fd9cee7d4a387409d85.png" /></a>
-                </div>
-                <div class="logo-image">
-                    <a href="/"><img src="~/Content/Image/92ae42a6ad89b3c73538bfb156219e3e.png" /></a>
-                </div>
-                <div class="logo-image">
-                    <a href="/"><img src="~/Content/Image/b0f603781ce07660925e57a54754c04e.png" /></a>
-                </div>
-            </div>
+                <div id="partners" class="img btn-block ">
+                    <div class="logo-image">
+                        <a href="/"><img src="~/Content/Image/147bd239527c5fd9cee7d4a387409d85.png" /></a>
+                    </div>
+                    <div class="logo-image">
+                        <a href="/"><img src="~/Content/Image/92ae42a6ad89b3c73538bfb156219e3e.png" /></a>
+                    </div>
+                    <div class="logo-image">
+                        <a href="/"><img src="~/Content/Image/b0f603781ce07660925e57a54754c04e.png" /></a>
+                    </div>
+                </div>*@
 
             <div class="top-buffer btn-block">
                 <n>Sắp xếp theo</n>
@@ -141,6 +177,196 @@
                 <button type="button" class="btn btn-primary"> Hàng mới </button>
                 <button type="button" class="btn btn-primary"> Giá thấp </button>
                 <button type="button" class="btn btn-primary"> Giá cao </button>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3">
+                    <label class="container1">
+                        <img src="~/Content/Image/Tikinowicon.png" width="59" height="17" />
+                        Hàng quốc tế
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="container1">
+                        <img src="~/Content/Image/earthicon.png" width="13" height="13" />
+                        Giao nhanh
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="col-md-offset-8">
+                    Bạn muốn giao hàng tới đâu? - <a> NHẬP ĐỊA CHỈ</a>
+                </div>
+            </div>
+
+
+            <div id="partners" class="img btn-block row">
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book1.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book2.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book3.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book4.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="partners" class="img btn-block row">
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book5.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book6.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book7.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book8.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="partners" class="img btn-block row">
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book9.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book10.png" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book2.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <div class="card">
+                        <img src="~/Content/Image/book1.jpg" alt="Denim Jeans" style="width:100%">
+                        <p>Mình nói gì khi nói Hạnh phúc</p>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star gold"></span>
+                        <span class="glyphicon glyphicon-star-empty gold"></span>
+                        <span class="smallfont">(4)</span>
+                        <p>59.900 đ</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
