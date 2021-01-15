@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="MvcSiteMapProvider, Version=4.6.26.0, Culture=neutral, PublicKeyToken=1923abe4657913cc, processorArchitecture=MSIL">
       <HintPath>..\packages\MvcSiteMapProvider.MVC5.Core.4.6.26\lib\net45\MvcSiteMapProvider.dll</HintPath>
     </Reference>
@@ -1829,6 +1830,7 @@
     <Content Include="Content\Image\fb.svg" />
     <Content Include="Content\Image\Gnx04xF.jpg" />
     <Content Include="Content\Image\Human.png" />
+    <Content Include="Content\Image\icon.png" />
     <Content Include="Content\Image\installment.svg" />
     <Content Include="Content\Image\internet-banking.svg" />
     <Content Include="Content\Image\jcb.svg" />
@@ -1849,6 +1851,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Mvc.sitemap" />
@@ -1946,6 +1949,8 @@
     <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
+    <Content Include="Views\Shared\Login.cshtml" />
+    <Content Include="Views\Home\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
