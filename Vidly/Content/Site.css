@@ -246,8 +246,10 @@ input.marginnone {
     transform: rotate(45deg);
 }
 
-.card {   
+.card {
     max-width: 300px;
+    width: 220px;
+    height:300px;
     margin: auto;
     text-align: left;
     font-family: arial;
@@ -256,7 +258,6 @@ input.marginnone {
     padding-left: 16px;
     padding-right: 16px;
     background-color: white;
-    flex-grow: 1;
 }
 
 .price {

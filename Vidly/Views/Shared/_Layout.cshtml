@@ -28,6 +28,17 @@
     </script>
     <style>
         /* Header/Logo Title */
+        .col-sm-3 {
+            padding: 0 !important;
+            z-index: 1;
+        }
+            
+            .col-sm-3:hover {
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+                z-index: 2;
+            }
+
+
         .header {
             top: 0;
             padding: 10px;
@@ -36,6 +47,20 @@
             color: white;
             height: 102px;
             width: 100%;
+        }
+
+        .col-md-3{
+            width:23%
+        }
+
+        .col-md-9{
+            width:73%
+        }
+        div.bottompad{
+            padding-bottom:5px;
+        }
+        div.rightpad{
+            margin-right:0px;    
         }
 
         p.idname {
@@ -53,7 +78,7 @@
                 color: #404040;
             }
 
-        h3 .newdes {
+        h3.newdes {
             margin: 0px;
             font-size: 16px;
             box-sizing: border-box;
@@ -113,14 +138,7 @@
 
         div.cuspad {
             padding: 0;          
-        }
-        div.Productfill {
-            display: table;           
-        }
-        div.Productfill > div{
-            flex-grow: 1;
-            flex-basis:auto;
-        }
+        }      
 
         div.bgcolor {
             background-color: white;
@@ -202,6 +220,7 @@
             box-sizing: border-box;
         }
 
+        
         input {
             width: 200px;
             height: 34px;
