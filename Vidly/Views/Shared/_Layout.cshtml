@@ -38,7 +38,10 @@
                 z-index: 2;
             }
 
-
+            
+            .col-md-9{
+                width: 71%;
+            }
         .header {
             top: 0;
             padding: 10px;
@@ -49,13 +52,7 @@
             width: 100%;
         }
 
-        .col-md-3{
-            width:23%
-        }
-
-        .col-md-9{
-            width:73%
-        }
+        
         div.bottompad{
             padding-bottom:5px;
         }
@@ -138,25 +135,41 @@
 
         div.cuspad {
             padding: 0;          
-        }      
+        }
 
         div.bgcolor {
             background-color: white;
+            background-clip: content-box;
         }
 
         div.padblock {
             padding-bottom: 15px;
             padding-left: 20px;
             padding-right: 20px;
+            display:block;
+        }
+
+        .padblock:nth-child(n+2) {
+            border-top: 2px solid rgb(247, 247, 247);
+        }
+
+        div.wrapblock {
+            display: block;
+            padding: 25px 20px 7px;
+            box-sizing: border-box;
+        }
+        *, ::before, ::after {
+            box-sizing: border-box;
         }
 
         a.item {
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding: 5px 0px;
+            line-height: 15px;
+            display: block;
         }
 
         a.smallfont {
-            font-size: 12px;
+            font-size: 13px;
         }
 
 
@@ -257,6 +270,27 @@
             color: rgb(51, 51, 51);
             font-size: 12px;
             font-weight: 400;
+        }
+
+        div.itemdisplay {
+            display: flex;
+            flex-wrap: wrap;
+            align-self: stretch;
+            background-color: rgb(255, 255, 255);
+        }
+
+        div.delivery {
+            display: flex;
+            padding: 16px 0px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            cursor: pointer
+        }
+
+        div.checkbox {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
         }
     </style>
 </head>

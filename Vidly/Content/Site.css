@@ -11,6 +11,7 @@
     margin-left: 156px;
     margin-right: 156px;
     background-color: white;
+   
 }
 
 .wrapperbc {
@@ -246,17 +247,13 @@ input.marginnone {
     transform: rotate(45deg);
 }
 
-.card {
-    max-width: 300px;
-    width: 220px;
-    height:300px;
+.card {   
+    width: 100%;
+    height: 300px;
     margin: auto;
     text-align: left;
     font-family: arial;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 12px 16px;
     background-color: white;
 }
 
