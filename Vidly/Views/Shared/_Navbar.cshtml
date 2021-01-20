@@ -5,17 +5,19 @@
             <a href="#" class="navbar-left"> <img src="~/Content/Image/Logo.png" width="60" height="40" /> </a>
         </div>
 
-        <div class="cuspad col-md-2">
-            <div class="dropdown row">
-                <a href="javascript:void(0)" class="dropbtn">
-                    <div style=" flex-direction:column" class="cuspad col-sm-4"><img src="~/Content/Image/nutton.png" width="32" height="32" /></div>
-                    <div style="flex-grow:1" class="cuspad col-sm-8">
-                        <span class="font1 pull-left Productfill">Danh mục </span><br>
-                        <span class="pull-left">Tài khoản</span>
-                        <span class="pull-left"><img src="~/Content/Image/down.png" width="16" height="16" /></span>
-                    </div>
-                </a>
-                <div class="dropdown-content">
+        <div class="cuspad col-md-2" style="width:12%">
+            <div class="dropdown ItemRoot">
+                <img class="profile_icon" src="~/Content/Image/nutton.png" />
+                <span class="Itemtext">
+                    <span class="user_wrap">Danh mục</span>
+                    <span class="account">
+                        <span>Sản phẩm</span>
+                        <a href="javascript:void(0)" class="dropbtn">
+                            <img class="ArrowDown" src="~/Content/Image/down.png" />
+                        </a>
+                    </span>
+                </span>
+                <div class="dropdown-content abox">
                     <a href="#">Điện thoại - Máy tính bảng</a>
                     <a href="#">Điện tử - Điện lạnh</a>
                     <a href="#">Phụ kiện - Thiết bị số</a>
@@ -38,19 +40,66 @@
         </div>
 
         <div class="col-md-2">
-            <div class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn"></a>
-                <div class="cuspad col-sm-4"><img src="~/Content/Image/Human.png" width="32" height="32" /></div>
-                <div class="cuspad col-sm-8">
-                    <span class="font1 pull-left">Đăng ký / Đăng nhập</span><br>
-                    <span class="pull-left">Tài khoản</span>
-                    <span class="pull-left"><img src="~/Content/Image/down.png" width="16" height="16" /></span>
+            <div class="dropdown ItemRoot">
+                <img class="profile_icon" src="~/Content/Image/Human.png" />
+                <span class="Itemtext">
+                    <span class="user_wrap">Đăng ký / Đăng nhập</span>
+                    <span class="account">
+                        <span>Tài khoản</span>
+                        <a href="javascript:void(0)" class="dropbtn">
+                            <img class="ArrowDown" src="~/Content/Image/down.png" />
+                        </a>
+                    </span>
+                </span>
+
+                <div class="dropdown-content abox">
+                    <button class="DN">Đăng Nhập</button>
+
+                    <button class="DK">Tạo tài khoản</button>
+
+                    <button class="FB">
+                        <span class="FBButton">
+                            <i class="tikicon iconFB"></i>
+                        </span>
+                        Đăng nhập bằng Facebook
+                    </button>
+
+                    <button class="GG">
+                        <span class="GGButton">
+                            <i class="tikicon iconGG"></i>
+                        </span>
+                        Đăng nhập bằng Google
+                    </button>
+
+                    <button class="Zalo">
+                        <span class="ZaloButton">
+                            <i class="tikicon iconZalo"></i>
+                        </span>
+                        Đăng nhập bằng Zalo
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-1">
-            <a href="/"><img src="~/Content/Image/Shoppingcart.png" width="32" height="32" /></a>
+        <div class="col-md-1 Cart" style="width:13%">
+            <div class="CartItem">
+                <div class="cart-wrapper">
+                    <img class="Cart-Icon" src="~/Content/Image/Shoppingcart.png" />
+                    <span class="CItem">0</span>
+                </div>
+                <span class="Cart-Text">Giỏ Hàng</span>
+            </div>
         </div>
+    </div>
+</div>
+<div class="container-fluid hojaook">
+    <div class="stylequicklink">
+        <a class="short" href="/"> sách </a>
+        <a class="short" href="/"> sổ tay </a>
+        <a class="short" href="/"> conan tập 98 </a>
+        <a class="short" href="/"> lược sử thế giới </a>
+        <a class="short" href="/"> kỹ năng sống </a>
+        <a class="short" href="/"> lightnovel </a>
+        <a class="short" href="/"> modelstylize</a>
     </div>
 </div>

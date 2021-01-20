@@ -24,9 +24,32 @@
 .midwrapper {
     margin: 0;
     align-content: center;
-    padding-top: 18px;
-    padding-bottom: 8px;
+    padding: 18px 0 8px;
 }
+
+.stylequicklink {
+    height: 32px;
+}
+
+a.short {
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: white;
+    margin-right: 12px;
+}
+
+.hojaook {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -281,6 +304,49 @@ input.marginnone {
 p {
     background-color: white;
 }
+.abox::after {
+    content: " ";
+    background: transparent none repeat scroll 0% 0%;
+    height: 20px;
+    width: 150px;
+    top: -20px;
+    left: calc(50% - 65px);
+    position: absolute;
+    display: inline-block;
+}
+
+.abox::before {
+    border-color: transparent transparent rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 9px;
+    border-image: none 100% / 1 / 0 stretch;
+    margin-left: -9px;
+    bottom: 100%;
+    left: 50%;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.abox {
+    display: none;
+    border: 1px solid rgb(239, 239, 239);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    width: auto;
+    min-width: 196px;
+    z-index: 15;
+    list-style: outside none none;
+    margin: 0px;
+    padding: 10px 0px;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 12px 0px;
+    position: absolute;
+    top: 45px;
+    left: calc(50% + 10px);
+    transform: translateX(-50%);
+}
 
 .FormRoot {
     letter-spacing: normal;
@@ -344,3 +410,281 @@ p {
     .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     }
+
+
+.profile_icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 2px;
+    letter-spacing: normal;
+}
+
+.ItemRoot {
+    cursor: pointer;
+    margin: 0px 0px 0px 16px;
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    position: relative;
+}
+
+.Itemtext {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_wrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    text-transform: capitalize;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.account {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 20px;
+    min-width: 120px;
+}
+
+.ArrowDown {
+    width: 16px;
+    height: 16px;
+}
+
+.DN {
+    color: rgb(74, 74, 74);
+    background: rgb(253, 216, 53) none repeat scroll 0% 0%;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0px none;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    user-select: none;
+    margin: 5px 12px;
+    width: 236px;
+    height: 41px;
+    outline: currentcolor none medium;
+    text-shadow: rgb(171, 171, 171) 0px 0px 1px;
+}
+
+    .DN:hover {
+        opacity: 0.85;
+    }
+
+.DK {
+    color: rgb(74, 74, 74);
+    background: rgb(253, 216, 53) none repeat scroll 0% 0%;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0px none;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    user-select: none;
+    margin: 5px 12px;
+    width: 236px;
+    height: 41px;
+    line-height: 41px;
+    outline: currentcolor none medium;
+    text-shadow: rgb(171, 171, 171) 0px 0px 1px;
+}
+
+    .DK:hover {
+        opacity: 0.85;
+    }
+
+.tikicon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.FB {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0px none;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    user-select: none;
+    margin: 5px 12px;
+    width: 236px;
+    height: 41px;
+    line-height: 41px;
+    outline: currentcolor none medium;
+    background: rgb(59, 89, 152) none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+    .FB:hover {
+        opacity: 0.85;
+    }
+
+.FBButton {
+    float: left;
+    height: 41px;
+    width: 41px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.iconFB {
+    background-image: url('Image/sprite.png');
+    background-position: -290px -290px;
+    width: 24px;
+    height: 24px;
+}
+
+.GG {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0px none;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    user-select: none;
+    margin: 5px 12px;
+    width: 236px;
+    height: 41px;
+    line-height: 41px;
+    outline: currentcolor none medium;
+    background: rgb(223, 74, 50) none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+    .GG:hover {
+        opacity: 0.85;
+    }
+
+.iconGG {
+    background-image: url('Image/sprite.png');
+    background-position: -29px -288px;
+    width: 24px;
+    height: 24px;
+}
+
+.GGButton {
+    float: left;
+    height: 41px;
+    width: 41px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Zalo {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 0px none;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 4px;
+    user-select: none;
+    margin: 5px 12px;
+    width: 236px;
+    height: 41px;
+    line-height: 41px;
+    outline: currentcolor none medium;
+    background: rgb(15, 142, 221) none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.iconZalo {
+    background-image: url('Image/sprite.png');
+    background-position: -240px -72px;
+    width: 25px;
+    height: 25px;
+}
+
+.ZaloButton {
+    float: left;
+    height: 41px;
+    width: 41px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Zalo:hover {
+    opacity: 0.85;
+}
+
+.Cart {
+    position: relative;
+    display: block;
+}
+
+.CartItem {
+    cursor: pointer;
+    margin: 0px 0px 0px 16px;
+    -moz-box-align: center;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    position: relative;
+    align-items: flex-end;
+}
+
+.cart-wrapper {
+    position: relative;
+    margin-right: 8px;
+    display: flex;
+}
+
+.Cart-Icon {
+    width: 32px;
+    height: 32px;
+}
+
+.CItem {
+    color: rgb(36, 36, 36);
+    background: rgb(253, 216, 53) none repeat scroll 0% 0%;
+    height: 20px;
+    left: 20px;
+    top: -2px;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    padding: 0px 7px;
+}
+
+.Cart-Text {
+}

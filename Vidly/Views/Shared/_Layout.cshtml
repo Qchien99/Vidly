@@ -292,14 +292,23 @@
             -webkit-box-align: center;
             align-items: center;
         }
+
+        .kawbos {
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(242, 242, 242);
+            -webkit-box-align: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="container">
+        
             @Html.Partial("_NavBar")
-        </div>
+        
     </div>
     <div class="container bgcolor">
         <div class="breadcrumb cusmargin bgcolor bcpadding">
